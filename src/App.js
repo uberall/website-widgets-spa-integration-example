@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { NavLink, Route, Routes } from "react-router-dom";
+import RouteWithStoreLocator from "./routes/RouteWithStoreLocator";
+import RouteWithoutStoreLocator from "./routes/RouteWithoutStoreLocator";
 
 function App() {
+  const [isStoreFinderBundleLoaded, setIsStoreFinderBundleLoaded] =
+    useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page-wrapper">
+      <div className="nav-bar">
+        <NavLink to="/">Page without Store Locator</NavLink>{" "}
+        <NavLink to="/with-store-locator">Page with Store Locator</NavLink>{" "}
+      </div>
+      <Routes>
+        <Route path="/" element={<RouteWithoutStoreLocator />} />
+        <Route
+          path="/with-store-locator"
+          element={
+            <RouteWithStoreLocator
+              isStoreFinderBundleLoaded={isStoreFinderBundleLoaded}
+              setIsStoreFinderBundleLoaded={setIsStoreFinderBundleLoaded}
+            />
+          }
+        />
+      </Routes>
     </div>
   );
 }

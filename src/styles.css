@@ -1,0 +1,30 @@
+.page-without-storelocator {
+    background-color: rgb(255, 157, 157);
+    padding: 16px;
+    color: white;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.page-wrapper {
+    font-family: sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+    font-size: 24px;
+    text-decoration: none;
+    align-items: center;
+
+    
+}
+.nav-bar a {
+    color: black;
+
+
+}
