@@ -38,6 +38,7 @@ const RouteWithStoreLocator = ({
       data-footertext="Uberall Storefinder Test Footer"
       data-title="Uberall Storefinder"
       data-filters="services"
+      data-widgetoriginurl=""
     ></div>
   );
 };
