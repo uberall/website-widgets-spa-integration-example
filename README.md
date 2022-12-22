@@ -1,13 +1,15 @@
-# Integrating the store-locator into a single-page-application (SPA)
+# Integrating website-widgets into a single-page-application (SPA)
 
-The uberall store-locator works out of the box for server-side-rendered pages, but for single-page-applications there have to be some manual configurations to make the store-locator work. This is often the case for websites which use popular frameworks like React, Vue.js or Angular.
+The uberall website-widgets work out of the box for server-side-rendered pages, but for single-page-applications there needs to be some manual configuration to make them work. This is often the case for websites which use popular frameworks like React, Vue.js or Angular.
 
-This repo is an example app to showcase how to integrate our store-locator inside a React app.
+This repo is an example app to showcase how to integrate the widgets inside a React app.
 
 ## How to start the app
 
-- add your storefinder-key to the [store-locator component](https://github.com/uberall/storelocator-spa-integration/blob/main/src/routes/RouteWithStoreLocator.js)
+- add your website-widgets-key and `locationId` to the [widgets component](https://github.com/uberall/website-widgets-spa-integration-example/blob/main/src/routes/RouteWithWebsiteWidgets.js)
 
-- In the project directory, you can run: `npm start`
+- install the packages with `npm install`
 
-- Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- In the project directory, run: `npm start`
+
+- Open [http://localhost:3000](http://localhost:3000) to view the example page in your browser.
