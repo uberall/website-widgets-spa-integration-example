@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const RouteWithStoreLocator = () => {
+const RouteWithWebsiteWidgets = () => {
   useEffect(() => {
     window.startUberallWidgets();
     return () => {
@@ -17,4 +17,4 @@ const RouteWithStoreLocator = () => {
   );
 };
 
-export default RouteWithStoreLocator;
+export default RouteWithWebsiteWidgets;
