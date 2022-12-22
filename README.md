@@ -8,8 +8,8 @@ This repo is an example app to showcase how to integrate the widgets inside a Re
 
 - add your website-widgets-key and `locationId` to the [widgets component](https://github.com/uberall/website-widgets-spa-integration-example/blob/main/src/routes/RouteWithWebsiteWidgets.js)
 
-- install the packages with `npm install`
+- in the project directory, to install the packages, run `npm install`
 
-- In the project directory, run: `npm start`
+- in the project directory, to start the example app, run: `npm start`
 
 - Open [http://localhost:3000](http://localhost:3000) to view the example page in your browser.
