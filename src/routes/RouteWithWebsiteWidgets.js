@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 
 const RouteWithWebsiteWidgets = () => {
   useEffect(() => {
-    window.startUberallWidgets();
+    window.startWebsitesWidgets();
     return () => {
-      window.unmountUberallWidgets();
+      window.unmountWebsitesWidgets();
     };
   }, []);
 
